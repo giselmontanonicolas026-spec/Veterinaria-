@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #009688;
+  color: white;
+  padding: 15px 20px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.icon-menu {
+  display: none;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ gap: 4px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #004d40;
+  color: yellow;
+}
+
+
+#banner {
+  background: linear-gradient(to right, #00796B, #004D40);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#banner h2 {
+  font-size: 24px;
+}
+
+
+#nuestros-programas {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+#nuestros-programas h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.carta, .pato {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+#blog {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+#blog h2 {
+  text-align: center;
+  margin-bottom: 20px;
+ 
+}
+
+
+#galeria {
+  background-color: #e0f2f1;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#galeria h2 {
+  margin-bottom: 20px;
+}
+
+.galeria-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.galeria-contenido img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  
+}
+
+
+#contacto {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#contacto p {
+  margin: 8px 0;
+  
+}
+.icon-location,
+.icon-phone,
+.icon-mail {
+  margin-right: 8px;
+  color: green;
+}
+
+
+@media (max-width: 768px) {
+  .programas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-contenido {
+   
+    flex-direction: row;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #menu-bar:checked + label + .menu {
+  display: flex;
+}
+  
+  .icon-menu {
+    display: block;
+  }
+}
